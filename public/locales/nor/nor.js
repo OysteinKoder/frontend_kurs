@@ -1,3 +1,5 @@
+//contains all the norwegian text being used in the app
+
 export default {
   about_page_title: "Om Oss",
   course_page_title: "Om Kurset",

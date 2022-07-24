@@ -1,3 +1,5 @@
+//contains all the english text being used in the app
+
 export default {
   about_page_title: "About",
   course_page_title: "The Course",

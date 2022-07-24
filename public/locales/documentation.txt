@@ -1,0 +1,4 @@
+Using i18n:
+Contains folders for the currently supported languages. 
+Currently supported: nor, en.
+Inside these folders there is a file containing an object where the keys are used as id, and the strings are the text being used.

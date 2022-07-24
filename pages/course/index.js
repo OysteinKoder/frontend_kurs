@@ -3,6 +3,8 @@ import en from "../../public/locales/en/en";
 import { useRouter } from "next/router";
 import Header from "../../components/Header";
 
+//CoursePage contains all the info about the cource we provide
+
 const CoursePage = () => {
   const router = useRouter();
   const { locale } = router;

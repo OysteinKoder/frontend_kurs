@@ -13,6 +13,8 @@ import {
   FormControl,
 } from "@mui/material";
 
+//This Header component is being used in all pages for navigation.
+
 const Header = () => {
   const router = useRouter();
   const { locale } = router;
