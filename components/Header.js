@@ -27,11 +27,11 @@ const Header = () => {
   };
   return (
     <header>
-      <Typography variant="h1" align="center">
-        {translation.header_title}
-      </Typography>
       <AppBar position="static">
-        <Grid align="center" textAlign="center">
+        <Grid align="center">
+          <Typography variant="h1" style={{ fontSize: "1rem" }}>
+            {translation.header_title}
+          </Typography>
           <Link href="/about">
             <Button variant="contained" title={translation.header_navbar_about}>
               {translation.header_navbar_about}
