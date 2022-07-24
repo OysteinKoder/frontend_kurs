@@ -21,6 +21,12 @@ export default function Home() {
   const { locale } = router;
   const translation = locale === "en" ? en : nor;
   const language = "language";
+
+  const changeLanguage = (e) => {
+    locale = e.target.value;
+    router.push("/", "/", { locale });
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -52,17 +58,20 @@ export default function Home() {
               </Button>
             </Link>
             <FormControl>
-              <InputLabel>{locale}</InputLabel>
+              <InputLabel style={{ color: "white", padding: "0.5em" }}>
+                {locale}
+              </InputLabel>
               <Select
                 labelId="language selector"
                 id="language selector"
                 value={language}
                 label="Age"
+                onChange={changeLanguage}
               >
-                <MenuItem value={10}>
+                <MenuItem value={"en"}>
                   {translation.landing_page_navbar_selector_locale_en}
                 </MenuItem>
-                <MenuItem value={20}>
+                <MenuItem value={"nor"}>
                   {translation.landing_page_navbar_selector_locale_nor}
                 </MenuItem>
               </Select>
