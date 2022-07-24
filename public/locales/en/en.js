@@ -1,8 +1,8 @@
 export default {
-  test: "english",
-  landing_page_navbar_about: "About",
-  landing_page_navbar_frontend_course: "Course",
-  landing_page_header: "Frontend Course",
-  landing_page_navbar_selector_locale_en: "en",
-  landing_page_navbar_selector_locale_nor: "nor",
+  header_navbar_about: "About",
+  header_navbar_course: "Course",
+  header_navbar_selector_locale_en: "en",
+  header_navbar_selector_locale_nor: "nor",
+  header_title: "Frontend Course",
+  test: "English",
 };

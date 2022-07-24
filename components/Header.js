@@ -26,24 +26,21 @@ const Header = () => {
   return (
     <header>
       <Typography variant="h1" align="center">
-        {translation.landing_page_header}
+        {translation.header_title}
       </Typography>
       <AppBar position="static">
         <Grid align="center" textAlign="center">
           <Link href="/about">
-            <Button
-              variant="contained"
-              title={translation.landing_page_navbar_about}
-            >
-              {translation.landing_page_navbar_about}
+            <Button variant="contained" title={translation.header_navbar_about}>
+              {translation.header_navbar_about}
             </Button>
           </Link>
           <Link href="/course">
             <Button
               variant="contained"
-              title={translation.landing_page_navbar_frontend_course}
+              title={translation.header_navbar_course}
             >
-              {translation.landing_page_navbar_frontend_course}
+              {translation.header_navbar_course}
             </Button>
           </Link>
           <FormControl>
@@ -58,10 +55,10 @@ const Header = () => {
               onChange={changeLanguage}
             >
               <MenuItem value={"en"}>
-                {translation.landing_page_navbar_selector_locale_en}
+                {translation.header_navbar_selector_locale_en}
               </MenuItem>
               <MenuItem value={"nor"}>
-                {translation.landing_page_navbar_selector_locale_nor}
+                {translation.header_navbar_selector_locale_nor}
               </MenuItem>
             </Select>
           </FormControl>
