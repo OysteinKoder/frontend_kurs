@@ -11,7 +11,7 @@ const AboutPage = () => {
   return (
     <>
       <Header />
-      <h1>{translation.landing_page_navbar_about}</h1>
+      <h1>{translation.about_page_title}</h1>
     </>
   );
 };

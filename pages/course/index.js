@@ -11,7 +11,7 @@ const CoursePage = () => {
   return (
     <>
       <Header />
-      <h1>{translation.landing_page_navbar_frontend_course}</h1>
+      <h1>{translation.course_page_title}</h1>
     </>
   );
 };
