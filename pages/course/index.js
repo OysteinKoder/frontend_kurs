@@ -2,6 +2,8 @@ import nor from "../../public/locales/nor/nor";
 import en from "../../public/locales/en/en";
 import { useRouter } from "next/router";
 import Header from "../../components/Header";
+import { Card, Grid, Typography } from "@mui/material";
+import { Box } from "@mui/system";
 
 //CoursePage contains all the info about the cource we provide
 
@@ -13,7 +15,40 @@ const CoursePage = () => {
   return (
     <>
       <Header />
-      <h1>{translation.course_page_title}</h1>
+      <main>
+        <Typography variant="h2" align="center">
+          {translation.course_page_title}
+        </Typography>
+        <Grid>
+          <Box width={2 / 5} marginTop="1rem">
+            <Card>
+              <Box padding=".5rem">
+                <Typography variant="h3">Frontend?</Typography>
+                <Typography variant="p" style={{ wordWrap: "break-word" }}>
+                  As a frontend developer you make websites using your awsome
+                  skills! In the frontend we make everything the user sees and
+                  interacts with.
+                </Typography>
+                <ul>
+                  <li>Creative and artsy people often do well!</li>
+                </ul>
+              </Box>
+            </Card>
+          </Box>
+          <Box width={2 / 5} marginTop="1rem">
+            <Card>
+              <Box padding=".5rem">
+                <Typography variant="h3">Some Facts</Typography>
+                <ul>
+                  <li>Average developer salary in Norway is 720 000 NOK</li>
+                  <li>There are more job openings than developers</li>
+                  <li>Frontend development is fun!</li>
+                </ul>
+              </Box>
+            </Card>
+          </Box>
+        </Grid>
+      </main>
     </>
   );
 };
