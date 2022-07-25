@@ -4,6 +4,8 @@ import { useRouter } from "next/router";
 import Header from "../../components/Header";
 import { Card, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import computerWoman from "../../public/static/images/computerWoman.jpg";
+import Image from "next/image";
 
 //CoursePage contains all the info about the cource we provide
 
@@ -20,7 +22,7 @@ const CoursePage = () => {
           {translation.course_page_title}
         </Typography>
         <Grid>
-          <Box width={2 / 5} marginTop="1rem">
+          <Box display="flex" alignContent="space-between" margin="1rem">
             <Card>
               <Box padding=".5rem">
                 <Typography variant="h3">Frontend?</Typography>
@@ -34,8 +36,14 @@ const CoursePage = () => {
                 </ul>
               </Box>
             </Card>
+            <Image
+              src={computerWoman}
+              objectFit="cover"
+              height="2rem"
+              className="rounded-full"
+            />
           </Box>
-          <Box width={2 / 5} marginTop="1rem">
+          <Box display="flex" alignContent="space-between" margin="1rem">
             <Card>
               <Box padding=".5rem">
                 <Typography variant="h3">Some Facts</Typography>
