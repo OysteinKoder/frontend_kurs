@@ -7,7 +7,7 @@ import { Box } from "@mui/system";
 import computerWoman from "../../public/static/images/computerWoman.jpg";
 import Image from "next/image";
 
-//CoursePage contains all the info about the cource we provide
+//CoursePage contains all the info about the course we provide
 
 const CoursePage = () => {
   const router = useRouter();
@@ -25,14 +25,16 @@ const CoursePage = () => {
           <Box display="flex" alignContent="space-between" margin="1rem">
             <Card>
               <Box padding=".5rem">
-                <Typography variant="h3">Frontend?</Typography>
+                <Typography variant="h3">
+                  {translation.course_page_card_frontend_title}
+                </Typography>
                 <Typography variant="p" style={{ wordWrap: "break-word" }}>
-                  As a frontend developer you make websites using your awsome
-                  skills! In the frontend we make everything the user sees and
-                  interacts with.
+                  {translation.course_page_card_frontend_main_text}
                 </Typography>
                 <ul>
-                  <li>Creative and artsy people often do well!</li>
+                  <li>
+                    {translation.course_page_card_frontend_list_item_creative}
+                  </li>
                 </ul>
               </Box>
             </Card>
@@ -46,11 +48,13 @@ const CoursePage = () => {
           <Box display="flex" alignContent="space-between" margin="1rem">
             <Card>
               <Box padding=".5rem">
-                <Typography variant="h3">Some Facts</Typography>
+                <Typography variant="h3">
+                  {translation.course_page_card_facts_title}
+                </Typography>
                 <ul>
-                  <li>Average developer salary in Norway is 720 000 NOK</li>
-                  <li>There are more job openings than developers</li>
-                  <li>Frontend development is fun!</li>
+                  <li>{translation.course_page_card_facts_list_salary}</li>
+                  <li>{translation.course_page_card_facts_list_jobs}</li>
+                  <li>{translation.course_page_card_facts_list_fun}</li>
                 </ul>
               </Box>
             </Card>
