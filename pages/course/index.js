@@ -21,45 +21,42 @@ const CoursePage = () => {
         <Typography variant="h2" align="center">
           {translation.course_page_title}
         </Typography>
-        <Grid>
+
+        <Box m={2}>
           <Box display="flex" alignContent="space-between" margin="1rem">
-            <Card>
-              <Box padding=".5rem">
-                <Typography variant="h3">
-                  {translation.course_page_card_frontend_title}
-                </Typography>
-                <Typography variant="p" style={{ wordWrap: "break-word" }}>
-                  {translation.course_page_card_frontend_main_text}
-                </Typography>
-                <ul>
-                  <li>
-                    {translation.course_page_card_frontend_list_item_creative}
-                  </li>
-                </ul>
-              </Box>
-            </Card>
-            <Image
-              src={computerWoman}
-              objectFit="cover"
-              height="2rem"
-              className="rounded-full"
-            />
+            <Box p={1}>
+              <Typography variant="h3">
+                {translation.course_page_card_frontend_title}
+              </Typography>
+              <Typography variant="p" style={{ wordWrap: "break-word" }}>
+                {translation.course_page_card_frontend_main_text}
+              </Typography>
+              <ul>
+                <li>
+                  {translation.course_page_card_frontend_list_item_creative}
+                </li>
+              </ul>
+            </Box>
+            <Box width="100%" height="100%" alignContent="center" p={1}>
+              <Image src={computerWoman} objectFit="cover" />
+            </Box>
           </Box>
-          <Box display="flex" alignContent="space-between" margin="1rem">
-            <Card>
-              <Box padding=".5rem">
-                <Typography variant="h3">
-                  {translation.course_page_card_facts_title}
-                </Typography>
-                <ul>
-                  <li>{translation.course_page_card_facts_list_salary}</li>
-                  <li>{translation.course_page_card_facts_list_jobs}</li>
-                  <li>{translation.course_page_card_facts_list_fun}</li>
-                </ul>
-              </Box>
-            </Card>
-          </Box>
-        </Grid>
+        </Box>
+
+        <Box display="flex" alignContent="space-between" margin="1rem">
+          <Card>
+            <Box m={2}>
+              <Typography variant="h3">
+                {translation.course_page_card_facts_title}
+              </Typography>
+              <ul>
+                <li>{translation.course_page_card_facts_list_salary}</li>
+                <li>{translation.course_page_card_facts_list_jobs}</li>
+                <li>{translation.course_page_card_facts_list_fun}</li>
+              </ul>
+            </Box>
+          </Card>
+        </Box>
       </main>
     </>
   );
