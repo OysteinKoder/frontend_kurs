@@ -1,3 +1,4 @@
+import Head from "next/head";
 import nor from "../../public/locales/nor/nor";
 import en from "../../public/locales/en/en";
 import { useRouter } from "next/router";
@@ -16,6 +17,19 @@ const CoursePage = () => {
   const language = "language";
   return (
     <>
+      <Head>
+        <title>Create Next App</title>
+        <meta
+          name="description"
+          content="Information about the frontend course"
+        />
+        <meta
+          name="keywords"
+          content="Frontend, course, online, web development, information"
+        ></meta>
+        <meta name="author" content="Øystein Ellingsen"></meta>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Header />
       <main>
         <Typography variant="h2" align="center">
